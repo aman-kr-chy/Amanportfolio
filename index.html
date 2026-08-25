@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Kumar | Full Stack Developer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome & Devicon for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">&lt;Aman/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero-container container grid">
+                <div class="hero-content fade-in">
+                    <h3 class="hero-greeting">Hi, my name is</h3>
+                    <h1 class="hero-name">Aman Kumar.</h1>
+                    <h2 class="hero-title">I am a <span class="typing-text"></span><span class="cursor">|</span></h2>
+                    <p class="hero-description">
+                        I am a Full Stack Developer with a B.Tech in Computer Science & Engineering. 
+                        I specialize in building exceptional digital experiences, focusing on web development, 
+                        backend architecture, and problem-solving.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        <a href="assets/resume.pdf" class="btn btn-outline" target="_blank" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                    
+                    <div class="hero-socials">
+                        <a href="https://github.com/aman-kr-chy" target="_blank" class="social-icon" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/aman-kumar-2007/" target="_blank" class="social-icon" title="LeetCode">
+                            <i class="fas fa-code"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aman-kumar-128b93342/" target="_blank" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-container fade-in">
+                    <div class="hero-shape">
+                        <div class="hero-blob"></div>
+                        <!-- Placeholder for actual profile image -->
+                        <img src="assets/profile.jpg" alt="Aman Kumar" class="hero-img" onerror="this.src='https://via.placeholder.com/400x400/1e293b/38bdf8?text=Aman+Kumar'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title fade-in">About Me</h2>
+                <div class="about-container grid">
+                    <div class="about-text fade-in">
+                        <p>
+                            Hello! My name is Aman and I enjoy creating things that live on the internet. 
+                            My interest in software development started back in college, where I pursued my 
+                            <strong>B.Tech in Computer Science & Engineering</strong>. Through various projects 
+                            and coursework, I discovered my passion for full-stack web development.
+                        </p>
+                        <p>
+                            I have a strong foundation in problem-solving and algorithms, which helps me 
+                            build efficient, scalable, and robust real-world applications. Whether it's 
+                            crafting beautiful user interfaces or architecting secure backend APIs, 
+                            I thrive on turning complex problems into elegant solutions.
+                        </p>
+                        <p>
+                            When I'm not coding, I'm usually exploring new technologies, participating in 
+                            hackathons, or solving algorithmic puzzles on coding platforms.
+                        </p>
+                    </div>
+                    <div class="about-stats fade-in">
+                        <div class="stat-card glass-card">
+                            <i class="fas fa-code stat-icon"></i>
+                            <h3 class="stat-number">10+</h3>
+                            <p class="stat-text">Projects Completed</p>
+                        </div>
+                        <div class="stat-card glass-card" style="cursor: pointer;" onclick="window.open('https://leetcode.com/u/aman-kumar-2007/', '_blank')">
+                            <img src="assets/leetcode.png" style="width: 3rem; height: 3rem; margin: 0 auto 1rem; display: block; object-fit: contain;" alt="LeetCode Logo">
+                            <h3 class="stat-number">300+</h3>
+                            <p class="stat-text">DSA Problems Solved</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <i class="fas fa-graduation-cap stat-icon"></i>
+                            <h3 class="stat-number">2028</h3>
+                            <p class="stat-text">B.Tech Graduation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section-title fade-in">Technical Skills</h2>
+                <div class="skills-categories grid">
+                    <!-- Frontend -->
+                    <div class="skills-category glass-card fade-in">
+                        <h3 class="skills-category-title">Frontend</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="devicon-html5-plain colored"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-css3-plain colored"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-javascript-plain colored"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-react-original colored"></i>
+                                <span>React.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skills-category glass-card fade-in">
+                        <h3 class="skills-category-title">Backend</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="devicon-nodejs-plain colored"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-express-original"></i>
+                                <span>Express.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="skills-category glass-card fade-in">
+                        <h3 class="skills-category-title">Database</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="devicon-mongodb-plain colored"></i>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programming Languages -->
+                    <div class="skills-category glass-card fade-in">
+                        <h3 class="skills-category-title">Languages</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="devicon-java-plain colored"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-c-line colored"></i>
+                                <span>C</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deployment / Server -->
+                    <div class="skills-category glass-card fade-in">
+                        <h3 class="skills-category-title">Deployment</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="devicon-vercel-original" style="filter: invert(1);"></i>
+                                <span>Vercel</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-server" style="font-size: 2.5rem; color: #46E3B7;"></i>
+                                <span>Render</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-aws" style="font-size: 2.5rem; color: #FF9900;"></i>
+                                <span>AWS</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-github" style="font-size: 2.5rem;"></i>
+                                <span>GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section-title fade-in">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card fade-in">
+                        <div class="project-img-wrapper">
+                            <img src="assets/college_project.png" alt="College Website" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">College Website</h3>
+                            <p class="project-description">
+                                A comprehensive college portal built for managing admissions, course information, student resources, and campus events. Features automated ID card generation upon student enrollment and secure online fee payments integrated with Razorpay.
+                            </p>
+                            <ul class="project-tech-list">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank" title="GitHub Repo"><i class="fab fa-github"></i></a>
+                                <a href="https://www.bihms.in/" class="project-link" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card fade-in">
+                        <div class="project-img-wrapper">
+                            <img src="assets/bharat_jodo.png" alt="Bharat Jodo!" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Bharat Jodo!</h3>
+                            <p class="project-description">
+                                Connect with random people and make new friends. Enjoy private, secure, and comfortable conversations. Meet random friends from colleges all over India.
+                            </p>
+                            <ul class="project-tech-list">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>MongoDB</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank" title="GitHub Repo"><i class="fab fa-github"></i></a>
+                                <a href="https://bharat-chat-eight.vercel.app/" class="project-link" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card fade-in">
+                        <div class="project-img-wrapper">
+                            <img src="assets/tictactoe.png" alt="Tic-Tac-Toe Game" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Tic-Tac-Toe Game</h3>
+                            <p class="project-description">
+                                Developed an interactive Tic-Tac-Toe game using HTML, CSS, and JavaScript with a responsive and user-friendly interface. Implemented turn-based gameplay, win/draw detection, and restart functionality, where players take turns placing X and O to get three in a row.
+                            </p>
+                            <ul class="project-tech-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/aman-kr-chy/Tic-Tac-Toe" class="project-link" target="_blank" title="GitHub Repo"><i class="fab fa-github"></i></a>
+                                <a href="https://tic-tac-toe-henna-sigma.vercel.app/" class="project-link" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Experience Section -->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <h2 class="section-title fade-in">Education & Experience</h2>
+                <div class="timeline grid">
+                    <!-- Education Column -->
+                    <div class="timeline-column fade-in">
+                        <h3 class="timeline-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="timeline-box">
+                            <div class="timeline-item active">
+                                <span class="timeline-date">2024 - 2028</span>
+                                <h4 class="timeline-item-title">B.Tech in Computer Science & Engineering</h4>
+                                <p class="timeline-item-subtitle">Parul University</p>
+                                <p class="timeline-text">
+                                    Core coursework includes DSA, OS, CN, JAVA, DBMS, and the MERN STACK.
+                                </p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2022 - 2024</span>
+                                <h4 class="timeline-item-title">Higher Secondary Education</h4>
+                                <p class="timeline-item-subtitle">Woodbine Modern School</p>
+                                <p class="timeline-text">
+                                    Focused on Physics, Chemistry, and Mathematics. Actively participated in science exhibitions and coding clubs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Column -->
+                    <div class="timeline-column fade-in">
+                        <h3 class="timeline-title"><i class="fas fa-briefcase"></i> Experience</h3>
+                        <div class="timeline-box">
+                            <div class="timeline-item active">
+                                <span class="timeline-date">2026 - Present</span>
+                                <h4 class="timeline-item-title">Freelance Web Developer</h4>
+                                <p class="timeline-item-subtitle">Self-Employed</p>
+                                <p class="timeline-text">
+                                    Designed and developed responsive websites for local businesses using modern web technologies, improving their online presence and client engagement.
+                                </p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2025</span>
+                                <h4 class="timeline-item-title">Placement Cell Coordinator</h4>
+                                <p class="timeline-item-subtitle">Parul University</p>
+                                <p class="timeline-text">
+                                    Organized campus placement drives and acted as a liaison between tech recruiters and students. Conducted mock interviews, managed student data, and streamlined the campus recruitment process.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coding Profiles Section -->
+        <section class="achievements section" id="profiles">
+            <div class="container">
+                <h2 class="section-title fade-in">Coding Profiles</h2>
+                <div class="achievements-grid">
+                    <div class="coding-profiles glass-card fade-in">
+                        <h3 class="profiles-title">My Coding Profiles</h3>
+                        <p class="profiles-desc">Check out my daily coding activity and problem-solving journey.</p>
+                        <div class="profiles-links">
+                            <a href="javascript:void(0);" onclick="showActivity('github')" class="profile-btn btn-outline">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="javascript:void(0);" onclick="showActivity('leetcode')" class="profile-btn btn-outline">
+                                <i class="fas fa-code"></i> LeetCode
+                            </a>
+                            <a href="https://www.linkedin.com/in/aman-kumar-128b93342/" class="profile-btn btn-outline" target="_blank">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                        
+                        <div class="activity-container mt-4" style="text-align: center; margin-top: 1.5rem; min-height: 150px;">
+                            <a id="github-activity" href="https://github.com/aman-kr-chy" target="_blank" style="display: none; transition: opacity 0.3s ease;">
+                                <img src="assets/github_activity.png" alt="GitHub Activity" style="width: 100%; border-radius: 8px; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+                            </a>
+                            <a id="leetcode-activity" href="https://leetcode.com/u/aman-kumar-2007/" target="_blank" style="display: none; transition: opacity 0.3s ease;">
+                                <img src="assets/leetcode_activity.png" alt="LeetCode Activity" style="width: 100%; border-radius: 8px; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+                            </a>
+                            <div id="activity-placeholder" style="color: var(--text-muted); padding: 3rem 0; transition: opacity 0.3s ease;">
+                                Click on GitHub or LeetCode above to view my activity graphs.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="certificates section" id="certificates">
+            <div class="container">
+                <h2 class="section-title fade-in">Certificates</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card glass-card fade-in" style="padding: 1.5rem; text-align: center;">
+                        <img src="assets/sih_certificate.png" alt="Smart India Hackathon 2026 Certificate" style="width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <h3 class="achievement-title" style="margin-bottom: 0.5rem;">SIH 2026 Internal Hackathon</h3>
+                        <p class="achievement-desc">Certificate of Participation for the Smart India Hackathon 2026 Institute-Level Internal Hackathon at Parul University, organised by the Technical Events Cell.</p>
+                    </div>
+
+                    <div class="achievement-card glass-card fade-in" style="padding: 1.5rem; text-align: center;">
+                        <img src="assets/vadodara_hackathon.png" alt="Vadodara Hackathon 6.0 Certificate" style="width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <h3 class="achievement-title" style="margin-bottom: 0.5rem;">Vadodara Hackathon 6.0</h3>
+                        <p class="achievement-desc">Certificate of Participation in Vadodara Hackathon 6.0, organized by Parul Innovation & Entrepreneurship Research Centre in Vadodara, Gujarat.</p>
+                    </div>
+
+                    <div class="achievement-card glass-card fade-in" style="padding: 1.5rem; text-align: center;">
+                        <img src="assets/devtrails_hackathon.png" alt="Guidewire DEVTrails Hackathon Certificate" style="width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <h3 class="achievement-title" style="margin-bottom: 0.5rem;">Guidewire DEVTrails Hackathon</h3>
+                        <p class="achievement-desc">Certificate of Participation for the Guidewire DEVTrails University Hackathon 2026, in partnership with EY and the National Insurance Academy.</p>
+                    </div>
+
+                    <div class="achievement-card glass-card fade-in" style="padding: 1.5rem; text-align: center;">
+                        <img src="assets/cert_html_css.png" alt="IT Specialist HTML and CSS Certificate" style="width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <h3 class="achievement-title" style="margin-bottom: 0.5rem;">IT Specialist - HTML & CSS</h3>
+                        <p class="achievement-desc">Information Technology Specialist certification in HTML and CSS, awarded by Certiport and Pearson VUE.</p>
+                    </div>
+
+                    <div class="achievement-card glass-card fade-in" style="padding: 1.5rem; text-align: center;">
+                        <img src="assets/cert_js.png" alt="IT Specialist JavaScript Certificate" style="width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <h3 class="achievement-title" style="margin-bottom: 0.5rem;">IT Specialist - JavaScript</h3>
+                        <p class="achievement-desc">Information Technology Specialist certification in JavaScript, awarded by Certiport and Pearson VUE.</p>
+                    </div>
+
+                    <div class="achievement-card glass-card fade-in" style="padding: 1.5rem; text-align: center;">
+                        <img src="assets/cert_python.png" alt="IBM Python Certificate" style="width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <h3 class="achievement-title" style="margin-bottom: 0.5rem;">IBM - Python</h3>
+                        <p class="achievement-desc">Python certification provided by IBM Developer Skills Network and issued by Etrain Education.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title fade-in">Get In Touch</h2>
+                <div class="contact-container grid">
+                    <div class="contact-info fade-in">
+                        <h3 class="contact-title">Let's connect!</h3>
+                        <p class="contact-text">
+                            I'm currently looking for new opportunities. Whether you have a question, 
+                            want to collaborate on a project, or just want to say hi, I'll try my best 
+                            to get back to you!
+                        </p>
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <div class="contact-icon-wrapper">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:amankr698891@gmail.com" class="contact-link">amankr698891@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon-wrapper">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-text-sm">India</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <a href="https://github.com/aman-kr-chy" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://leetcode.com/u/aman-kumar-2007/" target="_blank" class="social-link" title="LeetCode"><i class="fas fa-code"></i></a>
+                            <a href="https://www.linkedin.com/in/aman-kumar-128b93342/" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper glass-card fade-in">
+                        <form action="https://formsubmit.co/amankr698891@gmail.com" method="POST" class="contact-form" id="contact-form">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="hidden" name="_subject" value="New message from portfolio!">
+                            
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-submit">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">&lt;Aman/&gt;</a>
+                <p class="footer-desc">Building digital experiences with passion and precision.</p>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Aman Kumar. All rights reserved.</p>
+            </div>
+        </div>
+        <!-- Back to Top Button -->
+        <a href="#" class="back-to-top" id="back-to-top" aria-label="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
