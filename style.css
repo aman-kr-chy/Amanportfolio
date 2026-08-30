@@ -913,6 +913,7 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
     justify-content: center;
     transition: var(--transition-normal);
     z-index: 99;
+    overflow: hidden;
 }
 
 .floating-gmail:hover {
@@ -924,6 +925,7 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    transform: scale(1.4);
 }
 
 /* ==========================================================================
