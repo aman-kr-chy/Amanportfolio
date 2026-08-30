@@ -903,8 +903,8 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
     position: fixed;
     left: 2rem;
     bottom: 2rem;
-    width: 65px;
-    height: 65px;
+    width: 85px;
+    height: 85px;
     background: transparent;
     color: var(--bg-color);
     border-radius: 50%;
